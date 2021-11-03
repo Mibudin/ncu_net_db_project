@@ -1,0 +1,109 @@
+---
+NID:  # Entry ID
+  type: int
+ID:  # Accent ID (not unique)
+  type: int
+WAVname:  # Accent pronunciation file name
+  type: str
+K_FLD:  # ??? Whether exist `KWAV`
+  type: int(bool)
+ACT:  # Categorization tag
+  type: int(int[])
+katakana_reading:  # (midasigo (見出し語)) Original kana
+  type: str
+nhk:  # NHK suggested expression
+  type: str
+kanjiexpr:  # Dense kanji expression
+  type: str
+NHKexpr:  # NHK annotated expression
+  type: str
+numberchars:  # Number of characters of `katakana_reading`
+  type: int
+devoiced_pos:  # Position of devoiced kana
+  type: int
+nasalsoundpos:  # Position of nasal kana
+  type: int
+majiri:  # Example sentence
+  type: str
+kaisi:  # position of current word in example sentence
+  type: int
+KWAV:  # ???
+  type: str
+katakana_reading_alt:  # (midasigo (見出し語)) Standard kana
+  type: str
+akusentosuu:  # Number of alternative accents
+  type: int
+bunshou:  # Whether exist example sentence
+  type: int(bool)
+accent:  # Accent annotation (tail) (number based on characters)
+  type: str(int[])
+...
+---
+NID: ""
+ID: ""
+ACT: ""
+katakana_reading: ""
+nhk: ""
+kanjiexpr: ""
+NHKexpr: ""
+numberchars: ""
+devoiced_pos: ""
+nasalsoundpos: ""
+majiri: ""
+kaisi: ""
+katakana_reading_alt: ""
+akusentosuu: ""
+bunshou: ""
+accent: ""
+...
+---
+nid:
+  origin: NID
+  type: int
+aid:
+  origin: ID
+  type: int
+kana_index_seq:
+  origin: ACT
+  type: str
+kana_expr:
+  origin: katakana_reading
+  type: str
+kana_std_expr:
+  origin: katakana_reading_alt
+  type: str
+nhk_expr:
+  origin: nhk
+  type: str
+kanji_expr:
+  origin: kanjiexpr
+  type: str
+nhk_noted_expr:
+  origin: NHKexpr
+  type: str
+char_num:
+  origin: numberchars
+  type: int
+accent_num:
+  origin: akusentosuu
+  type: int
+accent_seq:
+  origin: accent
+  type: str
+voiceless_pos:
+  origin: devoiced_pos
+  type: int
+nasal_pos:
+  origin: nasalsoundpos
+  type: int
+phrase_status:
+  origin: bunshou
+  type: int
+phrase:
+  origin: majiri
+  type: str
+phrase_pos:
+  origin: kaisi
+  type: int
+...
+
