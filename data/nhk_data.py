@@ -2,13 +2,10 @@ import csv
 import sqlite3
 import pandas as pd
 
-
-__NHK_FILENAME = "./nhk_data.csv"
-__NHK_REV_FILENAME = "./nhk_data.rev.csv"
-__NHK_SQLITE_FILENAME = "./nhk_data.sqlite3"
+from definitions import *
 
 
-def __rearrange_csv():
+def _rearrange_csv():
     #  1. NID
     #  2. ID
     #  3. WAVname
@@ -45,18 +42,19 @@ def __rearrange_csv():
     # 14. [17] phrase_status
     # 15. [12] phrase
     # 16. [13] phrase_pos
-    df = pd.read_csv(__NHK_FILENAME, header=None, encoding="utf8")
+    df = pd.read_csv(NHK_DATA_PATH, header=None, encoding="utf8")
     df = df[[0, 1, 4, 5, 15, 6, 7, 8, 9, 16, 18, 10, 11, 17, 12, 13]]
-    df.to_csv(__NHK_REV_FILENAME, header=None, encoding="utf8",
+    df.fillna({10: -1, 11: -1}, inplace=True, downcast="infer")  # Avoid Pandas treating NaN as float
+    df.to_csv(NHK_DATA_REV_PATH, header=None, encoding="utf8",
               index=False, line_terminator="\n")
 
 
-def __csv_to_sqlite():
-    conn = sqlite3.connect(__NHK_SQLITE_FILENAME)
+def _csv_to_sqlite():
+    conn = sqlite3.connect(NHK_DATA_SQLITE_PATH)
     cur = conn.cursor()
     cur.execute("DELETE FROM Accents;")
 
-    with open(__NHK_REV_FILENAME, encoding="utf8") as csv_file:
+    with open(NHK_DATA_REV_PATH, encoding="utf8") as csv_file:
         rows = csv.reader(csv_file)
         cur.executemany("INSERT INTO Accents "
                         "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);", rows)
@@ -67,6 +65,6 @@ def __csv_to_sqlite():
 
 
 if __name__ == "__main__":
-    # __rearrange_csv()
-    # __csv_to_sqlite()
+    _rearrange_csv()
+    _csv_to_sqlite()
     pass

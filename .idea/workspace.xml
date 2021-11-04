@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a18eebb0-de3e-4403-a4f1-dc60792c1ac0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/nhk_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ncu_net_db_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ncu_net_db_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/definitions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jadapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jadapp/nhk_dictionary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jadcli/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jaddb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jaddb/nhk_dictionary_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/nhk_db_tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62facde5-0391-4dd6-b6ab-787615002283.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nhk_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/nhk_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nhk_data.rev.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/nhk_data.rev.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nhk_data.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/data/nhk_data.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +52,31 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="database.data.views" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.nhk_db_tester">
+    <configuration name="definitions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ncu_net_db_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/definitions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="nhk_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ncu_net_db_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,9 +99,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nhk_db_tester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ncu_net_db_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/nhk_db_tester.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nhk_db_tester" />
         <item itemvalue="Python.nhk_data" />
+        <item itemvalue="Python.definitions" />
       </list>
     </recent_temporary>
   </component>
@@ -85,6 +141,7 @@
       <workItem from="1635766319485" duration="2881000" />
       <workItem from="1635866303187" duration="6495000" />
       <workItem from="1635938002644" duration="15441000" />
+      <workItem from="1636005700651" duration="25166000" />
     </task>
     <servers />
   </component>
@@ -101,8 +158,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ncu_net_db_project$nhk_data.coverage" NAME="nhk_data Coverage Results" MODIFIED="1635963423842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/ncu_net_db_project$nhk_data.coverage" NAME="nhk_data Coverage Results" MODIFIED="1636027276588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/ncu_net_db_project$definitions.coverage" NAME="definitions Coverage Results" MODIFIED="1636007580358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ncu_net_db_project$nhk_db_tester.coverage" NAME="nhk_db_tester Coverage Results" MODIFIED="1636039304286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
 </project>
