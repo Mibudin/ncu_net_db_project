@@ -75,7 +75,7 @@ class NHKDictionaryDB:
         self._conn.close()
         self._conn = None
 
-    def lookup(self, query: str, size: int = 0) -> list[NHKDictionaryEntry]:
+    def lookup(self, query: str, size: int = 10) -> list[NHKDictionaryEntry]:
         # TODO: Duplicated equivalent entries
         #   https://stackoverflow.com/questions/23495734/sql-to-remove-rows-with-duplicated-value-while-keeping-one
         with closing(self._conn.cursor()) as cur:  # type: sqlite3.Cursor
