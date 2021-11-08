@@ -26,8 +26,8 @@ class NHKDictionaryEntry:
     char_num: int
     accent_num: int
     accent_seq: list[Pitch]
-    voiceless_pos: int
-    nasal_pos: int
+    voiceless_pos: int  # TODO: Sequence split by 0
+    nasal_pos: int  # TODO: Sequence split by 0
     phrase_status: bool
     phrase: str
     phrase_pos: int

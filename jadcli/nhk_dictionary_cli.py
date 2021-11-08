@@ -71,6 +71,10 @@ class JADCLI:
             if self._verbose:
                 if self._color:
                     print(f"[{clr.Fore.CYAN}{i + 1}{clr.Style.RESET_ALL}]:")
+                    print(f"  IDs:  {clr.Style.BRIGHT}{clr.Fore.MAGENTA}{e.nid}{clr.Style.RESET_ALL}｜"
+                          f"{clr.Fore.RED}{e.aid}{clr.Style.RESET_ALL}｜"
+                          f"{clr.Style.BRIGHT}{clr.Fore.BLUE}{e.kana_index_seq}{clr.Style.RESET_ALL}｜"
+                          f"{clr.Fore.CYAN}{e.accent_num}{clr.Style.RESET_ALL}")
                     print(f"  Qry:  {clr.Fore.GREEN}{e.kana_expr}{clr.Style.RESET_ALL}")
                     print(f"  Expr: {clr.Style.BRIGHT}{clr.Fore.YELLOW}{e.nhk_expr}{clr.Style.RESET_ALL}"
                           f"｜{clr.Fore.YELLOW}{e.kanji_expr}{clr.Style.RESET_ALL}")
@@ -83,6 +87,7 @@ class JADCLI:
                         print()
                 else:
                     print(f"[{i + 1}]:")
+                    print(f"  IDs:   {e.nid}｜{e.aid}｜{e.kana_index_seq}｜{e.accent_num}")
                     print(f"  Qry:  {e.kana_expr}")
                     print(f"  Expr: {e.nhk_expr}｜{e.kanji_expr}")
                     print(f"  Acc:  ", end="")

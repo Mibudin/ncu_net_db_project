@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a18eebb0-de3e-4403-a4f1-dc60792c1ac0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c00122f9-7b77-4574-bb1c-b2d3ab7c1cce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c00122f9-7b77-4574-bb1c-b2d3ab7c1cce.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jadcli/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/jadcli/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jadcli/nhk_dictionary_cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/jadcli/nhk_dictionary_cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jaddb/nhk_dictionary_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/jaddb/nhk_dictionary_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +164,7 @@
       <workItem from="1636125275337" duration="5536000" />
       <workItem from="1636186251338" duration="29041000" />
       <workItem from="1636261122547" duration="24813000" />
+      <workItem from="1636334071076" duration="5593000" />
     </task>
     <servers />
   </component>
